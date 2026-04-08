@@ -1,40 +1,100 @@
+/* Global Styles */
 body {
     margin: 0;
-    font-family: Arial;
-    background: linear-gradient(to right, #667eea, #764ba2);
-    color: white;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #a0c4ff, #bdb2ff, #ffc6ff);
+    color: #1d1d1d;
+}
+
+/* Header */
+header {
     text-align: center;
+    padding: 60px 20px 40px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #ff6b6b;
+}
+header p {
+    font-size: 1.2em;
 }
 
-.container {
-    background: rgba(0,0,0,0.2);
-    padding: 30px;
-    border-radius: 15px;
-    width: 60%;
-    margin: 100px auto;
+/* Main layout */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 20px;
 }
 
-h1 {
-    font-size: 40px;
-}
-
-h2 {
-    margin-top: 20px;
-}
-
-p {
-    font-size: 18px;
-}
-
-button {
-    padding: 12px 25px;
-    border: none;
+/* Card sections */
+.card {
+    max-width: 750px;
+    width: 90%;
+    text-align: center;
+    background: rgba(255,255,255,0.15);
+    padding: 40px;
     border-radius: 20px;
-    background: white;
-    color: #764ba2;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+.card h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #6bb0ff;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #ff8787;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255,255,255,0.2);
+}
+footer a {
+    color: #ff6b6b;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Game Box */
+.game-box {
+    width: 200px;
+    height: 200px;
+    background-color: #6bb0ff;
+    margin: 30px auto;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
     cursor: pointer;
 }
-
-button:hover {
-    transform: scale(1.05);
+.game-box:hover {
+    transform: scale(1.1) rotate(5deg);
 }
