@@ -1,6 +1,6 @@
 # Stephany Diaz Tejeda — AI 109 Website
 
-Deployed Website: [GitHub Pages](https://stephanydiaz7302006-create.github.io/)
+Deployed Website: [[GitHub Pages](https://stephanydiaz7302006-create.github.io/)](https://github.com/stephanydiaz7302006-create)
 
 This website includes:
 - About Me section
